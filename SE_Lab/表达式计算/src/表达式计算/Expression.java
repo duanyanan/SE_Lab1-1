@@ -1,7 +1,7 @@
 package 表达式计算;
 
 public class Expression {
-	private static final String[][] String = null;
+	private static final String[][] x = null;
 
 	private String thisExpression;
 	
@@ -20,7 +20,7 @@ public class Expression {
 	
 	public void Set(String expressionInput) throws ArithmeticException
 	{
-		//¸³³õÊ¼Öµ
+		//turn String to Expression
 		thisExpression=expressionInput;
 		simpleOrComplex = false;
 		
@@ -132,7 +132,6 @@ public class Expression {
 					temp=next;
 				}
 				i=j;
-				//ÒÔºóÔÙµ÷Õû·¶Î§
 			}
 			
 			else if ((expressionInput.charAt(i)>='A'&&expressionInput.charAt(i)<='Z') || (expressionInput.charAt(i)>='a'&&expressionInput.charAt(i)<='z'))
