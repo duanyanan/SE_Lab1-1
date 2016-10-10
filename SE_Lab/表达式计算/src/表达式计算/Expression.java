@@ -36,6 +36,7 @@ public class Expression {
 			{
 				if(leftTemp.simpleOrComplex&&leftTemp.abc==null&&leftTemp.num==-1)
 				{
+					//以+开始的表达式
 					System.out.println("ERROR!1");
 					throw new ArithmeticException();
 				}
@@ -49,6 +50,7 @@ public class Expression {
 			{
 				if(leftTemp.simpleOrComplex&&leftTemp.abc==null&&leftTemp.num==-1)
 				{
+					//以-开始的表达式
 					System.out.println("ERROR!2");
 					throw new ArithmeticException();
 				}
@@ -82,6 +84,7 @@ public class Expression {
 					j++;
 					if((j-i)>=18)
 					{
+						//运算数过大
 						System.out.println("ERROR!4");
 						throw new ArithmeticException();
 					}
@@ -112,6 +115,7 @@ public class Expression {
 					{
 						if (x>0)
 						{
+							//括号不匹配
 							System.out.println("ERROR!6");
 							throw new ArithmeticException();
 						}
