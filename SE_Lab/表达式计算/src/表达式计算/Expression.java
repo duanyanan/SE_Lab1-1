@@ -1,7 +1,7 @@
 package 表达式计算;
 
 public class Expression {
-	//private static final String[][] x = null;
+	
 
 	private String thisExpression;
 	
