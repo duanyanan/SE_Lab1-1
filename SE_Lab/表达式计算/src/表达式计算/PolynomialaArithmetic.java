@@ -1,16 +1,16 @@
-package ±í´ïÊ½¼ÆËã;
+package Â±Ã­Â´Ã¯ÃŠÂ½Â¼Ã†Ã‹Ã£;
 
 import java.util.*;
 
 public class PolynomialaArithmetic {
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO Ã—Ã”Â¶Â¯Ã‰ÃºÂ³Ã‰ÂµÃ„Â·Â½Â·Â¨Â´Ã¦Â¸Ã¹
 		Scanner lalala = new Scanner(System.in);
 		String Input ;
 		int la=0;
 		Expression a=new Expression();
-		System.out.println("Welcome to the PolynomialaArithmetic monitor.\nServer version: 1.0.9\nCopyright (c) 2016¡£\nType '!h' for help. Type '!q' for exit.\n ");
+		System.out.println("Welcome to the PolynomialaArithmetic monitor.\nServer version: 1.0.9\nCopyright (c) 2016Â¡Â£\nType '!h' for help. Type '!q' for exit.\n ");
 		while(true){
 			Input = lalala.nextLine();
 			try{
@@ -21,12 +21,13 @@ public class PolynomialaArithmetic {
 					break;
 				}
 				else if (Input.equals("!h"))
-					System.out.println("À²À²À²ÀÁµÃĞ´À²¾Í¸ú\n!ÀıÈç£º!simplify a=1  !d/dx \n±ØĞëÑÏ¸ñ°´ÕÕ¹æÔòÊäÈë£¡");
+					System.out.println("è¾“å…¥è¡¨è¾¾å¼\n!åŒ–ç®€!simplify a=1  !d/dx \nÂ±Ã˜ÃÃ«Ã‘ÃÂ¸Ã±Â°Â´Ã•Ã•Â¹Ã¦Ã”Ã²ÃŠÃ¤ÃˆÃ«Â£Â¡");
 
 				else if(Input.substring(0,4).equals("!d/d")||Input.substring(0,9).equals("!simplify"))
 				{
 					if(la==0)
-						System.out.println("ÉĞÎ´ÊäÈëÈÎºÎ±í´ïÊ½£¬ÎŞ·¨Ö´ĞĞÃüÁî¡£\n");
+						//ä¹±ç äº†ã€‚ã€‚ã€‚
+						System.out.println("Ã‰ÃÃÂ´ÃŠÃ¤ÃˆÃ«ÃˆÃÂºÃÂ±Ã­Â´Ã¯ÃŠÂ½Â£Â¬ÃÃÂ·Â¨Ã–Â´ÃÃÃƒÃ¼ÃÃ®Â¡Â£\n");
 					else 
 						a.Command(Input);
 				}
@@ -41,7 +42,7 @@ public class PolynomialaArithmetic {
 		}
 			catch(Exception e)
 			{
-				System.out.println("ÊäÈë²»ºÏ·¨£¡\n"+e);
+				System.out.println("ÃŠÃ¤ÃˆÃ«Â²Â»ÂºÃÂ·Â¨Â£Â¡\n"+e);
 			}
 		}
 		lalala.close();
