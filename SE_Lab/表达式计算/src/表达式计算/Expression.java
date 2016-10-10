@@ -26,7 +26,7 @@ public class Expression {
 		
 		head = new Expression();
 		
-		
+		//以下错误输出ERROR X基本上是对表达式输出不规范的错误
 		Expression temp = head;
 		Expression leftTemp = head;
 		Expression next =new Expression();

@@ -5,7 +5,6 @@ import java.util.*;
 public class PolynomialaArithmetic {
 
 	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
 		Scanner lalala = new Scanner(System.in);
 		String Input ;
 		int la=0;
